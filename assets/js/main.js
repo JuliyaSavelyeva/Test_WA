@@ -5,4 +5,14 @@ $(document).ready(function () {
       stop(true, true).
       slideToggle(500);
   });
+
+  $('.fade').slick({
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    speed: 1500,
+    fade: true,
+    cssEase: 'linear',
+    arrows: false
+  });
 });

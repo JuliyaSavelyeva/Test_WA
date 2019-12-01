@@ -19,11 +19,7 @@ body {
     width: 85%; 
     margin: 0 auto;
 
-    @media (max-width: $middle) and (min-width: $small + 1) {
-        width: 90%;
-    }
-
-    @media (max-width: $small) {
+    @media (max-width: $middle) {
         width: 100%;
     }
 }
