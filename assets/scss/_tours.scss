@@ -1,0 +1,112 @@
+.tours {
+    margin: 40px 0 75px 0;
+
+    &-title {
+        display: flex;
+        margin: 0 0 60px 0;
+
+        @media (max-width: $middle) {
+            margin: 0 0 60px 10px;
+        }
+
+        a {
+            text-decoration: none;
+            display: block;
+            margin-right: 30px;
+            color: $color-text;
+            font-size: $title;
+            font-weight: bold;
+            transition: 0.5s ease;
+
+            &:hover {
+                color: $hover;
+            }
+        }
+
+        .active {
+            color: $color-main;
+        }
+    }
+
+    .slick-slide {
+        margin-right: 40px;
+    }
+
+    .slider-item {
+        display: flex !important;
+        padding: 15px;
+        background-color: $tours-bg;
+
+        &__description {
+            padding: 20px 20px 20px 25px;
+            position: relative;
+
+            span {
+                display: block;
+                &:nth-child(1) {
+                    font-size: $size-body + 1;
+                    color: $color-text;
+                    font-weight: bold;
+                }
+
+                &:nth-child(2) {
+                    font-size: $size-min-body;
+                    color: $gray;
+                    position: relative;
+
+                    &::after {
+                        content: "";
+                        display: block;
+                        height: 1px;
+                        background-color: $tours-light-gray;
+                        margin: 10px 0;
+                    }
+                }
+
+                &:nth-child(3) {
+                    font-size: $size-min-body;
+                    color: $gray;
+                    margin-bottom: 30px;
+                }
+
+                &:nth-child(4) {
+                    font-size: $title;
+                    color: $color-text;
+                    position: relative;
+
+                    &::after {
+                        content: "/за 1 человека";
+                        font-size: $size-min-body - 3;
+                        color: $tours-light-gray-1;
+                        position: absolute;
+                        top: -3px;
+                        margin-left: 8px;
+                    }
+                }
+            }
+
+            &-btn {
+                position: absolute;
+                bottom: 5px;
+                right: 5px; 
+                width: 35px;
+                height: 35px;
+                background-color: $color-main;
+                border-radius: 50%;
+                cursor: pointer;
+                transition: 0.5s ease;
+
+                &:hover {
+                    background-color: $hover;
+                }
+
+                i {
+                    display: block;
+                    text-align: center;
+                    margin-top: 9px;
+                    margin-left: 2px;
+                }
+            }
+        }
+    }
+}
