@@ -540,6 +540,73 @@ body
     text-align: center;
 }
 
+.advantages
+{
+    background-color: #f8f7f7;
+}
+
+.advantages-title h2
+{
+    font-size: rgba(42, 119, 187, .7);
+
+    margin-top: 40px;
+    margin-bottom: 60px;
+
+    text-transform: uppercase;
+}
+
+.advantages-wrap
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    margin-bottom: 75px;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.advantages-wrap img
+{
+    display: block;
+}
+
+.advantages-wrap__description
+{
+    position: relative;
+
+    max-width: 590px;
+    margin-left: 90px;
+    padding-right: 50px;
+
+    border-right: 1px solid rgba(137, 137, 137, .5);
+}
+
+.advantages-wrap__description p
+{
+    line-height: 24px;
+
+    margin: 0;
+}
+
+.advantages-wrap__description .point
+{
+    font-size: 5px;
+
+    position: absolute;
+    top: 0;
+    right: -4px;
+
+    width: 8px;
+    height: 8px;
+
+    color: transparent;
+    border-radius: 50%;
+    background-color: #fbd341;
+}
+
 @media (max-width: 992px)
 {
     .container
@@ -553,6 +620,21 @@ body
     .tours-title
     {
         margin: 0 0 60px 10px;
+    }
+    .advantages-title
+    {
+        margin: 0 auto;
+    }
+    .advantages-wrap
+    {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
     }
 }
 
@@ -616,6 +698,12 @@ body
 
         left: -5px;
     }
+    .advantages-wrap__description
+    {
+        margin-top: 10px;
+        margin-left: 0;
+        padding-right: 10px;
+    }
 }
 
 @media (max-width: 1092px)
@@ -651,6 +739,11 @@ body
         font-size: 16.36364px;
 
         padding: 10px 15px;
+    }
+    .advantages-wrap__description
+    {
+        margin-top: 10px;
+        margin-left: 0;
     }
 }
 
