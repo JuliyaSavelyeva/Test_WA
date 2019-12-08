@@ -28,6 +28,11 @@
 
         img {
             display: block;
+
+            @media (max-width: $xsmall) {
+                width: 100%;
+                min-width: 350px;
+            }
         }
 
         &__description {

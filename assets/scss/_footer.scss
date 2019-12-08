@@ -1,0 +1,135 @@
+.footer {
+    background-color: $footer;
+    font-size: $size-min-body;
+    color: $white;
+    line-height: 24px;
+    padding: 60px 0 30px 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: $large) {
+            flex-wrap: wrap;
+        }
+
+        .footer-tour {
+            max-width: 311px;
+
+            @media (max-width: $large) and (min-width: $xsmall + 1) {
+                flex-basis: 50%;
+            }
+
+            @media (max-width: $xsmall) {
+                flex-basis: 100%;
+                margin: 0 auto;
+            }
+
+            &__description {
+
+                &::before {
+                    content: "";
+                    display: block;
+                    height: 1px;
+                    background-color: $tours-light-gray;
+                    margin-top: 20px;
+                    margin-bottom: 15px;
+                    width: 95%;
+                }
+
+                &:after {
+                    content: "";
+                    display: block;
+                    height: 1px;
+                    background-color: $tours-light-gray;
+                    margin-top: 20px;
+                    margin-bottom: 15px;
+                    width: 95%;
+                }
+            }
+
+            &__copyright {
+                background-image: url(../img/copyright.png);
+                background-repeat: no-repeat;
+                background-position: 56% 50%;
+            }
+        }
+
+        .navigation {
+            @media (max-width: $large) and (min-width: $xsmall + 1) {
+                flex-basis: 50%;
+            }
+
+            @media (max-width: $xsmall) {
+                flex-basis: 100%;
+                margin: 0 auto;
+            }
+        }
+
+        .support {
+            @media (max-width: $large) and (min-width: $xsmall + 1) {
+                flex-basis: 50%;
+            }
+
+            @media (max-width: $xsmall) {
+                flex-basis: 100%;
+                margin: 0 auto;
+            }
+        }
+
+        .contacts {
+
+            @media (max-width: $large) and (min-width: $xsmall + 1) {
+                flex-basis: 50%;
+            }
+
+            @media (max-width: $xsmall) {
+                flex-basis: 100%;
+                margin: 0 auto;
+            }
+
+            .contacts-title {
+                li {
+                    padding: 5px;
+    
+                    i {
+                        margin-right: 10px;
+                    }
+    
+                    .fab {
+                        font-size: 20px;
+                        margin-right: 25px;
+                    }
+                }
+            }
+        }
+
+        ul {
+            font-size: $size-menu-btn;
+            line-height: 24px;
+            list-style: none;
+
+            li {
+                color: $white;
+                font-size: $size-min-body;
+                a {
+                    text-decoration: none;
+                    color: $white;
+                    font-size: $size-min-body;
+                    display: block;
+                    padding: 5px;
+                    border-radius: 5px;
+
+                    &:hover {
+                        background-color: $footer-hover;
+                    }
+
+                }
+
+                &:nth-child(1) {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+}
