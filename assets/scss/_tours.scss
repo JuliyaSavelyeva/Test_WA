@@ -28,9 +28,15 @@
         }
     }
 
+    .slick-slider {
+        margin: 0 30px;
+    } 
+
     .slick-slide {
         margin-right: 40px;
     }
+
+
 
     .slider-item {
         display: flex !important;
@@ -87,8 +93,8 @@
 
             &-btn {
                 position: absolute;
-                bottom: 5px;
-                right: 5px; 
+                bottom: 0;
+                right: 0; 
                 width: 35px;
                 height: 35px;
                 background-color: $color-main;

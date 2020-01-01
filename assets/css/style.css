@@ -57,7 +57,7 @@ body
     width: 65%;
     padding: 40px 80px 45px 8%;
 
-    background-color: rgba(42, 119, 187, .7);
+    background-color: rgba(0, 76, 132, .49);
 }
 
 .header-title__title
@@ -235,12 +235,12 @@ body
 
     color: #fff;
     border-radius: 0;
-    background-color: rgba(51, 153, 231, .8);
+    background-color: rgba(51, 151, 226, .8);
 }
 
 .navbar-list__item-active a:hover
 {
-    background-color: #3399e7;
+    background-color: #2570a9;
 }
 
 .navbar-list .dropdown
@@ -347,34 +347,35 @@ body
 .fade .slick-dots
 {
     bottom: 20px;
-    left: 7%;
+    left: 7.5%;
 
     text-align: start;
 }
 
-.fade .slick-dots button
+.fade .slick-dots button:before
 {
-    width: 15px;
-    height: 15px;
+    width: 14px;
+    height: 14px;
 
+    content: '';
+    -webkit-transition: background-color .5s;
+         -o-transition: background-color .5s;
+            transition: background-color .5s;
+
+    opacity: 1;
     border-radius: 50%;
     background-color: #cbecf1;
 }
 
-.fade .slick-dots button:before
+.fade .slick-dots button:hover:before
 {
-    color: transparent;
+    background-color: #fbd341;
 }
 
 .fade .slick-dots .slick-active button:before
 {
-    font-size: 18px;
-    line-height: 18px;
-
-    left: -3px;
-
-    opacity: 100%;
-    color: #fbd341;
+    opacity: 1;
+    background-color: #fbd341;
 }
 
 .tours
@@ -416,6 +417,11 @@ body
 .tours-title .active
 {
     color: #fbd341;
+}
+
+.tours .slick-slider
+{
+    margin: 0 30px;
 }
 
 .tours .slick-slide
@@ -510,8 +516,8 @@ body
 .tours .slider-item__description-btn
 {
     position: absolute;
-    right: 5px;
-    bottom: 5px;
+    right: 0;
+    bottom: 0;
 
     width: 35px;
     height: 35px;
@@ -547,7 +553,7 @@ body
 
 .advantages-title h2
 {
-    font-size: rgba(42, 119, 187, .7);
+    font-size: rgba(0, 76, 132, .49);
 
     margin-top: 40px;
     margin-bottom: 60px;
@@ -632,7 +638,7 @@ body
 
 .form .container .form-title h2
 {
-    font-size: rgba(42, 119, 187, .7);
+    font-size: rgba(0, 76, 132, .49);
 
     text-transform: uppercase;
 
@@ -973,17 +979,10 @@ input[type='number']::-webkit-inner-spin-button
 
         margin: 15px auto 0 auto;
     }
-    .fade .slick-dots button
+    .fade .slick-dots button:before
     {
-        width: 6px;
-        height: 6px;
-    }
-    .fade .slick-dots .slick-active button:before
-    {
-        font-size: 12px;
-        line-height: 13px;
-
-        left: -5px;
+        width: 10px;
+        height: 10px;
     }
     .advantages-wrap__description
     {

@@ -10,16 +10,25 @@ $(document).ready(function () {
     dots: true,
     infinite: true,
     autoplay: true,
-    speed: 1500,
+    speed: 1000,
     fade: true,
     cssEase: 'linear',
-    arrows: false
+    arrows: false,
+    initialSlide: 0,
+
+    responsive: [{
+      breakpoint: 576,
+        settings: {
+          autoplay: false,
+          dots: false
+        }
+    }]
   });
 
   $('.autoplay').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 1500,
     arrows: true,
 
@@ -40,9 +49,11 @@ $(document).ready(function () {
   
       }, {
   
-        breakpoint: 300,
-        settings: "unslick"
-  
+        breakpoint: 576,
+        settings: {
+          autoplay: false,
+          slidesToShow: 1
+        }
       }]
   });
 });
