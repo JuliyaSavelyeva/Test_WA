@@ -4,6 +4,7 @@ $(document).ready(function () {
     $('.navbar-list').
       stop(true, true).
       slideToggle(500);
+    $('body').toggleClass('lock');
   });
 
   $('.fade').slick({
@@ -17,7 +18,7 @@ $(document).ready(function () {
     initialSlide: 0,
 
     responsive: [{
-      breakpoint: 576,
+      breakpoint: 768,
         settings: {
           autoplay: false,
           dots: false

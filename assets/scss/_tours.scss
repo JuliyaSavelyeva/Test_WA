@@ -30,13 +30,25 @@
 
     .slick-slider {
         margin: 0 30px;
+
     } 
 
     .slick-slide {
         margin-right: 40px;
+        outline: none;
     }
 
-
+    .slick-next:before {
+        background-image: url(../img/tours-arrow-right.png);
+        background-repeat: no-repeat;
+        color: transparent;
+    }
+    
+    .slick-prev:before {
+        background-image: url(../img/tours-arrow-left.png);
+        background-repeat: no-repeat;
+        color: transparent;
+    }
 
     .slider-item {
         display: flex !important;

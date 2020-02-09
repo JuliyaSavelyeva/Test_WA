@@ -24,12 +24,15 @@
 
         .form-content {
             background-color: $color-shadow;
-            padding: 0 35px 50px 35px;
+            padding: 0 35px 40px;
             margin-bottom: 40px;
 
             form {
                 display: flex;
                 justify-content: space-between;
+                align-items: baseline;
+                padding: 0;
+                margin: 0;
 
                 @media (max-width: $large) {
                     flex-wrap: wrap;
@@ -38,7 +41,6 @@
                 input {
                     font-size: $size-menu-btn;
                     padding-left: 10px;
-                    padding-top: 40px;
                     color: $white;
                     outline: none;
                     background-color: transparent;
@@ -60,30 +62,36 @@
                     &:nth-child(1) {
                         @media (max-width: $large) and (min-width: $xsmall + 1) {
                             flex-basis: 45%;
+                            margin-top: 30px;
                         }
 
                         @media (max-width: $xsmall) {
                             flex-basis: 100%;
+                            margin-top: 30px;
                         }
                     }
 
                     &:nth-child(2) {
                         @media (max-width: $large) and (min-width: $xsmall + 1) {
                             flex-basis: 45%;
+                            margin-top: 30px;
                         }
 
                         @media (max-width: $xsmall) {
                             flex-basis: 100%;
+                            margin-top: 30px;
                         }
                     }
 
                     &:nth-child(3) {
                         @media (max-width: $small) and (min-width: $xsmall + 1) {
                             flex-basis: 45%;
+                            margin-top: 30px;
                         }
 
                         @media (max-width: $xsmall) {
                             flex-basis: 100%;
+                            margin-top: 30px;
                         }
                     }
                 }
@@ -93,7 +101,6 @@
                     border-style: none;
                     background-color: transparent;
                     padding-left: 10px;
-                    padding-top: 40px;
                     padding-right: 30px;
                     appearance: none;
                     font-size: $size-menu-btn;
@@ -102,16 +109,22 @@
                     background-repeat: no-repeat;
                     background-position: 100% 90%;
 
+                    .fas {
+                        color: $white;
+                    }
+
                     option {
                         color: $color-text;
                     }
 
                     @media (max-width: $small) and (min-width: $xsmall + 1) {
                         flex-basis: 45%;
+                        margin-top: 30px;
                     }
 
                     @media (max-width: $xsmall) {
                         flex-basis: 100%;
+                        margin-top: 30px;
                     }
                    
                 }
