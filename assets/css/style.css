@@ -505,10 +505,6 @@ header .header-title__btn a:hover
 
 .tours .slider-item
 {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-
     padding: 15px;
 
     background-color: #f8f7f7;
@@ -1153,6 +1149,28 @@ input[type='number']::-webkit-inner-spin-button
         -webkit-transform: scaleY(1);
             -ms-transform: scaleY(1);
                 transform: scaleY(1);
+    }
+}
+
+@media (min-width: 501px)
+{
+    .tours .slider-item
+    {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+    }
+}
+
+@media (max-width: 500px)
+{
+    .tours .slider-item
+    {
+        display: block;
+    }
+    .tours .slider-item img
+    {
+        margin: 0 auto;
     }
 }
 

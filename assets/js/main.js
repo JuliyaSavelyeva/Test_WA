@@ -29,7 +29,7 @@ $(document).ready(function () {
   $('.autoplay').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 1500,
     arrows: true,
 

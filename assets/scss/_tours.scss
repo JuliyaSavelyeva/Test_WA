@@ -51,9 +51,23 @@
     }
 
     .slider-item {
-        display: flex !important;
+
+        @media (min-width: 501px) {
+            display: flex !important;
+        }
+        
+        @media (max-width: 500px) {
+            display: block;
+        }
         padding: 15px;
         background-color: $tours-bg;
+
+        img {
+            @media (max-width: 500px) {
+                margin: 0 auto;
+            }
+        }
+        
 
         &__description {
             padding: 20px 20px 20px 25px;
