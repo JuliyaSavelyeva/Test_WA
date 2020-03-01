@@ -208,13 +208,24 @@
                     <input class="form-text" type="text" placeholder="Имя">
                     <input class="form-email" type="email" placeholder="Email">
                     <input class="form-number"type="number" placeholder="Телефон">
-                    <select class="form-select" name="countries" id="countries"><i class="fas fa-chevron-down"></i>
+                    <!-- <select class="form-select" name="countries" id="countries"><i class="fas fa-chevron-down"></i>
                         <option class="countries" value="none" hidden>Страна тура</option>
                         <option class="country" value="2">Турция</option>
                         <option class="country active" value="3">Египет</option>
                         <option class="country" value="4">Шри-Ланка</option>
                         <option class="country" value="5">Доминикана</option>
-                    </select>
+                    </select> -->
+                    <div class="select">
+                        <div class="select__header">
+                            <span class="select__current">Страна тура</span>
+                        </div>
+                        <ul class="select__body">
+                            <li class="select__item">Турция</li>
+                            <li class="select__item">Египет</li>
+                            <li class="select__item">Шри-Ланка</li>
+                            <li class="select__item">Доминикана</li>
+                        </ul>
+                    </div>
                     <button class="form-btn" type="submit">Получить предложение</button>
                 </form>
             </div>
@@ -261,6 +272,7 @@
 <script src="libs/slick/jquery-migrate-1.2.1.min.js"></script>
 <script src="libs/slick/slick.min.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/select.js"></script>
 
 </body>
 </html>
