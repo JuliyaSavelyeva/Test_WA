@@ -977,6 +977,11 @@ input[type='number']::-webkit-inner-spin-button
     margin-right: 25px;
 }
 
+.footer .container h4
+{
+    text-align: center;
+}
+
 .footer .container ul
 {
     font-size: 18px;
