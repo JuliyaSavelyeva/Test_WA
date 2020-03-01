@@ -78,7 +78,6 @@
         }
 
         .contacts {
-
             @media (max-width: $large) and (min-width: $xsmall + 1) {
                 flex-basis: 50%;
             }
@@ -105,13 +104,15 @@
         }
 
         h4 {
-            text-align: center;
+            font-size: $size-menu-btn;
         }
 
         ul {
             font-size: $size-menu-btn;
             line-height: 24px;
             list-style: none;
+            margin: 0;
+            padding: 0;
 
             li {
                 color: $white;
