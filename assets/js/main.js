@@ -18,7 +18,7 @@ $(document).ready(function () {
     initialSlide: 0,
 
     responsive: [{
-      breakpoint: 768,
+      breakpoint: 769,
         settings: {
           autoplay: false,
           dots: false
@@ -27,10 +27,10 @@ $(document).ready(function () {
   });
 
   $('.autoplay').slick({
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 3000,
     arrows: true,
 
     responsive: [{
